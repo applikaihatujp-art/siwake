@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>複式仕訳マスター | 簿記3級〜1級の仕訳練習・スピード対策</title>
+    <meta name="description" content="簿記の仕訳を効率よく習得！複式仕訳マスターは、3級から1級まで対応した仕訳練習アプリです。ゲーム感覚で反復練習し、合格を目指そう。">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script src="questions.js" defer></script>
+    <script src="app.js" defer></script> 
+ 
+    <meta property="og:title" content="複式仕訳マスター">
+    <meta property="og:description" content="簿記の仕訳を隙間時間にゲーム感覚で練習！3級から1級まで対応。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">    
+</head>
+<body>
+        <div id="game-container">
+        <div id="start-screen">
+            <h1>爆速！複式仕訳マスター</h1>
+            <p style="color: #bbb; margin-bottom: 20px; line-height: 1.6; font-size: 14px;">
+                【借方（左）】👉【貸方（右）】の順にボタンを爆速で押せ！<br>
+                ★5問正解で<b>LEVEL 2（12択フルコンボモード）</b>へ突入！
+            </p>
+            <button class="start-btn" onclick="startGame()">GAME START</button>
+            <button class="settings-toggle-btn" onclick="toggleSettingsMenu()">⚙️ 設定を変更する</button>
+            <div id="settings-group" class="settings-group">
+                <div class="setting-box" style="cursor: default;">
+                    <span class="time-label">時間：</span>
+                    <select id="time-select" onchange="saveSettings()">
+                        <option value="30">30秒</option>
+                        <option value="60" selected>60秒</option>
+                        <option value="90">90秒</option>
+                        <option value="120">120秒</option>
+                        <option value="300">300秒</option>
+                    </select>
+                </div>
+            </div>
+            <div class="history-title">📈 過去5回の成績履歴</div>
+            <div id="history-list" class="history-list"></div>
+        </div>
+
+        <div id="play-screen" class="hide">
+            <div id="stats">
+                <div>TIME: <span id="timer">60</span>s</div>
+                <div><span id="level-badge">LV.1</span></div>
+                <div>SCORE: <span id="score">0</span></div>
+                <button class="quit-btn" onclick="quitGame()">途中でやめる</button>
+            </div>
+            <div id="progress-container"><div id="progress-bar"></div></div>
+            <div id="nav-box">
+                <div id="slot-dr" class="nav-slot nav-active">借方(左): 入力待ち...</div>
+                <div id="slot-cr" class="nav-slot">貸方(右): 待ち</div>
+            </div>
+            <div id="question-box">問題がここに表示されます</div>
+            <div id="btn-container" class="btn-container"></div>
+            <div class="action-area"><button id="clear-btn" class="clear-btn visibility-hidden" onclick="clearDrSelection()">借方をやり直す ↩</button></div>
+        </div>
+
+        <div id="result-screen" class="hide">
+            <h1>RESULT</h1>
+            <div style="display: flex; align-items: center; justify-content: center; gap: 20px; background: #3d3d3d; padding: 20px; border-radius: 12px; margin-bottom: 20px;">
+                <div style="text-align: center;">
+                    <div style="font-size: 14px; color: #aaa;">SCORE</div>
+                    <div style="font-size: 36px; font-weight: bold; color: #f1c40f;">
+                        <span id="final-score">0</span>
+                    </div>
+                </div>
+                <button id="review-btn" class="quit-btn" style="display:none; padding: 10px 15px; font-size: 14px;" onclick="showReview()">
+                    復習する
+                </button>
+            </div>
+
+            <div id="ad-space" style="background: #333; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+                <p style="color: #aaa; font-size: 12px; margin-bottom: 10px;">ADVERTISEMENT</p>
+                <div style="height: 100px; background: #444; display: flex; align-items: center; justify-content: center;">
+                    （ここに広告コードを貼るスペース）
+                </div>
+            </div>
+
+            <button class="start-btn" style="width: 200px; display: block; margin: 0 auto; padding: 15px; font-size: 18px;" onclick="location.reload()">PLAY AGAIN</button>
+        </div>
+
+        <div id="review-modal" class="hide" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #2d2d2d; padding: 20px; z-index: 1000; box-sizing: border-box; overflow-y: auto; text-align: left;">
+            <h2 style="color: #f1c40f;">間違えた問題の復習</h2>
+            <div id="wrong-questions-list" style="margin: 20px 0;"></div>
+            <button class="start-btn" style="width: 100%; padding: 15px; font-size: 18px;" onclick="hideReview()">戻る</button>
+        </div>
+    </div>
+   
+<!-- ▼ これに入れ替えてください ▼ -->
+    <div style="position: fixed; bottom: 10px; width: 100%; text-align: center; z-index: 9999; background: #2d2d2d; padding: 5px 0;">
+        <a href="blog.html" style="color: #888; font-size: 14px; text-decoration: none;">開発者ブログ</a> | 
+        <a href="mailto:appli.kaihatu.jp+shiwake@gmail.com" style="color: #888; font-size: 14px; text-decoration: none;">お問い合わせ</a> | 
+        <a href="privacy.html" style="color: #888; font-size: 14px; text-decoration: none;">プライバシーポリシー</a>
+    </div>
+    <!-- ▲ ここまで ▲ -->
+
+</body>
+</html>
