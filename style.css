@@ -115,7 +115,7 @@ h1 { color: #f1c40f; font-size: 26px; margin-bottom: 5px; }
     color: white;
 }
 
-/* --- 基本設定（スマホ縦持ち用の2列） --- */
+/* --- 基本設定（スマホ縦持ち用の2列） --- 
 .btn-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* スマホは2列 */
@@ -142,5 +142,7 @@ h1 { color: #f1c40f; font-size: 26px; margin-bottom: 5px; }
     /* 3. ボタン自体の高さが巨大化するのを防ぎ、押しやすい高さに固定します */
     .btn-container button {
         height: 60px !important;       /* ボタンの縦サイズを適切な高さに固定 */
-    } */
+    } 
 }
+
+*/
