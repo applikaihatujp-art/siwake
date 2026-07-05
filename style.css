@@ -103,14 +103,6 @@ h1 { color: #f1c40f; font-size: 26px; margin-bottom: 5px; }
     color: white;
 }
 
-
-/* 800px未満のときだけ2列にする設定 */
-@media screen and (max-width: 799px) {
-    .btn-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 /* 既存のPC用設定 */
 @media screen and (min-width: 800px) {
     #question-box {
