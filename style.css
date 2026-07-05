@@ -27,17 +27,29 @@ h1 { color: #f1c40f; font-size: 26px; margin-bottom: 5px; }
 /* 選択肢ボタン */
 .btn-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 常に4列で固定 */
-    gap: 10px;
-    margin-bottom: 10px;
+    /* 4列(repeat(4, 1fr)) ではなく、2列(repeat(2, 1fr)) に変更 */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px; /* 2列だと余裕ができるので、隙間を広げるとより押しやすくなります */
+    
+    max-width: 500px; /* 2列ならこのくらいの幅が一番指に馴染みます */
+    margin: 0 auto;
 }
 
-/* ボタンの中身を強制的に大きくする */
+/* 1. 通常のボタンの見た目 */
 .btn-container button {
-    font-size: 16px !important;
-    padding: 10px;
-    word-break: keep-all;
-    white-space: nowrap;
+  font-size: 16px !important;
+  padding: 10px;
+  word-break: keep-all;
+  white-space: nowrap;
+  
+  /* 追加したい操作感の設定 */
+  border-radius: 6px;
+  transition: opacity 0.2s;
+}
+
+/* 2. 押したときだけのアクション（これだけでひとつのルール） */
+.btn-container button:active {
+  opacity: 0.7;
 }
 
 .opt-btn { background: #34495e; color: white; border: 1px solid #555; padding: 16px 2px; border-radius: 8px; font-size: 13px; font-weight: bold; cursor: pointer; transition: all 0.1s; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
@@ -130,5 +142,5 @@ h1 { color: #f1c40f; font-size: 26px; margin-bottom: 5px; }
     /* 3. ボタン自体の高さが巨大化するのを防ぎ、押しやすい高さに固定します */
     .btn-container button {
         height: 60px !important;       /* ボタンの縦サイズを適切な高さに固定 */
-    }
+    } */
 }
