@@ -115,6 +115,13 @@ h1 { color: #f1c40f; font-size: 26px; margin-bottom: 5px; }
     color: white;
 }
 
+/* --- 2. 画面幅が520px以上のときだけ上書き（4列にする） --- */
+@media (min-width: 520px) {
+    .btn-container {
+        grid-template-columns: repeat(4, 1fr); /* 520px以上なら4列に変化 */
+    }
+}
+
 /* --- 基本設定（スマホ縦持ち用の2列） --- 
 .btn-container {
     display: grid;
