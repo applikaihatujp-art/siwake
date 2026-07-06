@@ -56,7 +56,14 @@ h1 { color: #f1c40f; font-size: 26px; margin-bottom: 5px; }
 .opt-btn:hover { background: #4e6a85; border-color: #f1c40f; }
 .opt-btn:active { transform: scale(0.95); }
 
-.action-area { display: flex; justify-content: flex-end; min-height: 30px; margin-top: 10px; width: 100%; }
+
+.action-area {
+  display: flex;
+  justify-content: flex-end; /* ここを調整してもOK */
+  width: 100%;             /* ここも必要に応じて変更OK */
+  max-width: 500px;        /* ここを追加するのもOK */
+  margin: 10px auto 0;     /* これも丸ごと入れ替えてOK */
+}
 .clear-btn { background: #e67e22; color: white; border: none; padding: 6px 16px; border-radius: 4px; font-size: 13px; cursor: pointer; font-weight: bold; transition: background 0.1s; }
 .clear-btn:hover { background: #d35400; }
 .visibility-hidden { visibility: hidden; }
