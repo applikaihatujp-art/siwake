@@ -22,7 +22,7 @@ h1 { color: #f1c40f; font-size: 26px; margin-bottom: 5px; }
 .nav-active { border-color: #f1c40f; color: #f1c40f; background: #3a341c; }
 .nav-filled { background: #1e3d23; color: #2ecc71; border-style: solid; }
 
-#question-box { background: #3d3d3d; padding: 10px; min-height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 19px; font-weight: bold; margin-bottom: 15px; line-height: 1.5; border-left: 5px solid #f1c40f; }
+#question-box { background: #3d3d3d; padding: 5px 10px; min-height: 40px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 19px; font-weight: bold; margin-bottom: 15px; line-height: 1.5; border-left: 5px solid #f1c40f; }
 
 /* 選択肢ボタン */
 .btn-container {
