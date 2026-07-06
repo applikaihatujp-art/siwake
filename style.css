@@ -56,7 +56,7 @@ h1 { color: #f1c40f; font-size: 26px; margin-bottom: 5px; }
 .opt-btn:hover { background: #4e6a85; border-color: #f1c40f; }
 .opt-btn:active { transform: scale(0.95); }
 
-.action-area { display: flex; justify-content: flex-end; min-height: 30px; margin-bottom: 10px; }
+.action-area { display: flex; justify-content: flex-end; min-height: 30px; margin-top: 10px; width: 100%; }
 .clear-btn { background: #e67e22; color: white; border: none; padding: 6px 16px; border-radius: 4px; font-size: 13px; cursor: pointer; font-weight: bold; transition: background 0.1s; }
 .clear-btn:hover { background: #d35400; }
 .visibility-hidden { visibility: hidden; }
