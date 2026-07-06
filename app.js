@@ -153,9 +153,15 @@ function nextQuestion() {
     lastQuizIndex = newIndex;
     currentQuiz = quizData[newIndex];
 
+   // --- ここにリセット処理を追加 ---
+    selectedDr = ""; 
+    selectedCr = "";
+    inputStep = 0; // 入力ステップも最初の状態に戻す
+
     // 表示更新
     document.getElementById('question-box').innerText = currentQuiz.q;
     setupButtons(newIndex);
+    updateNavUI(); // これを呼ぶことで画面の表示も「入力待ち」に更新されます
 }
 
 function handleButtonClick(selectedText) {
