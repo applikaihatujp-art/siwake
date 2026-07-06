@@ -22,7 +22,7 @@ h1 { color: #f1c40f; font-size: 26px; margin-bottom: 5px; }
 .nav-active { border-color: #f1c40f; color: #f1c40f; background: #3a341c; }
 .nav-filled { background: #1e3d23; color: #2ecc71; border-style: solid; }
 
-#question-box { background: #3d3d3d; padding: 8px 15px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 19px; font-weight: bold; margin-bottom: 11px; line-height: 1.5; border-left: 5px solid #f1c40f; }
+#question-box { background: #3d3d3d; padding: 10px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 19px; font-weight: bold; margin-bottom: 15px; line-height: 1.5; border-left: 5px solid #f1c40f; }
 
 /* 選択肢ボタン */
 .btn-container {
@@ -56,7 +56,7 @@ h1 { color: #f1c40f; font-size: 26px; margin-bottom: 5px; }
 .opt-btn:hover { background: #4e6a85; border-color: #f1c40f; }
 .opt-btn:active { transform: scale(0.95); }
 
-.action-area { display: flex; justify-content: flex-end; min-height: 30px; margin-bottom: 10px; }
+.action-area { display: flex; justify-content: flex-end; min-height: 30px; margin-top: 10px; width: 100%; }
 .clear-btn { background: #e67e22; color: white; border: none; padding: 6px 16px; border-radius: 4px; font-size: 13px; cursor: pointer; font-weight: bold; transition: background 0.1s; }
 .clear-btn:hover { background: #d35400; }
 .visibility-hidden { visibility: hidden; }
