@@ -1,0 +1,23 @@
+{
+  "name": "siwake",
+  "version": "1.0.0",
+  "description": "爆速！複式仕訳マスター - 簿記3級の仕訳をスマホで反復練習",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/applikaihatujp-art/siwake.git"
+  },
+  "keywords": ["簿記", "仕訳", "learning", "quiz"],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/applikaihatujp-art/siwake/issues"
+  },
+  "homepage": "https://github.com/applikaihatujp-art/siwake#readme",
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1"
+  }
+}
