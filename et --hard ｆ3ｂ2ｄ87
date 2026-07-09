@@ -1,0 +1,53 @@
+[33md79eac1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m フォルダ名指定の/削除
+[33m97cb149[m アイコンの位置を修正
+[33mac722c2[m Link　/追加
+[33m3b04afb[m 画像アイコンPublic移動＋webmanifest　/追加
+[33mda9fe08[m Publicフォルダー整理
+[33m3c4b1ee[m publicファイル追加
+[33mf3b2d87[m meta記載修正
+[33mde6ee77[m meta記載修正
+[33m80daad7[m 広告用タグ貼り付け
+[33m90dc895[m ポリシーと、ブログにドメインに関する記述追加
+[33mc9126cf[m ブログheadにフォント指定
+[33m33016a0[m Merge branch 'main' of https://github.com/applikaihatujp-art/-----
+[33mbb4e0f0[m ブログ内容調整
+[33m023e0c3[m Merge pull request #1 from applikaihatujp-art/vercel/install-vercel-web-analytics-wwirwt
+[33md9bd79c[m Install Vercel Web Analytics
+[33mf036c01[m プライバシーポリシーサイズスマホ用調整
+[33m3c3cec9[m 権利表記正式に変更
+[33mdf70f58[m 権利表記
+[33m586fe9e[m 問題文の上下10→5ｐｘ
+[33m049b025[m 問題文40px確保
+[33mcd063d0[m やり直すの配置修正
+[33m08fe8e9[m Merge branch '修正後'衝突修正メインに統合
+[33m7999e50[m[33m ([m[1;31morigin/修正後[m[33m, [m[1;32m修正後[m[33m)[m やり直すボタン
+[33ma79ff62[m クエボックスと、仕訳の下のサイズ調整
+[33m0ae65b7[m メタデータ貼りなおした
+[33mbb69881[m メタ修正と、借方修正
+[33m4eaea3e[m 仕訳と問題の間の距離15→10
+[33me39fa02[m ボタンとの余白8→11
+[33m4780fd4[m 上下余白10→8に
+[33mafc830a[m 最少50pxを削除
+[33m8bb7717[m 質問ボックス　余白狭めた
+[33m61de34a[m meta記載変更
+[33m1015484[m ブログ修正
+[33m5aae35d[m いったんブログ完成
+[33mef3764d[m 1
+[33m3830131[m さらに調整
+[33m23f8916[m ブログ内の下配置調整
+[33m86eda68[m ブログ内にアップデート情報等
+[33m4bc9641[m アイコン追加用headにmeta追加
+[33m8b11997[m アイコンのファイル名pngを削除した
+[33m235f83e[m いったん下に保存していたものを消去
+[33m732937c[m 横画面520設定
+[33mc99c58e[m 下いったん無効か
+[33m0773d5c[m 確認
+[33m16971a8[m 111
+[33m00ed2d7[m 縦も消去
+[33m5884b13[m 縦と横の修正
+[33m46fa9fd[m 縦画面時の設定追加
+[33mf22cecb[m マニフェストファイル追加
+[33m7b038f9[m Merge branch 'main' of https://github.com/applikaihatujp-art/-----
+[33mf0706e9[m HTMLに画像処理のコマンド追加
+[33m7e35f0f[m Add files via upload
+[33m01d653f[m First commit
